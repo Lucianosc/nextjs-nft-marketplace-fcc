@@ -2,12 +2,13 @@ import { gql } from "@apollo/client";
 
 const GET_ACTIVE_ITEMS = gql`
   {
-    itemListeds(first: 10) {
+    activeItems(first: 10) {
       id
-      nftAddress
-      tokenId
-      price
+      buyer
       seller
+      nftAddress
+      price
+      tokenId
     }
   }
 `;

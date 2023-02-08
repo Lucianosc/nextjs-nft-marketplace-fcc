@@ -36,7 +36,7 @@ export default function Home() {
               <h3>Loading...</h3>
             </div>
           ) : (
-            listedNfts?.itemListeds.map((elem, i) =>
+            listedNfts?.activeItems.map((elem, i) =>
               marketplaceAddress ? (
                 <NFTBox
                   key={`${i}_${elem?.nftAddress}`}
